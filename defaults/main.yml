@@ -1,0 +1,8 @@
+---
+
+#desktop_timezone: Europe/Moscow
+timezone_name: "America/Toronto"
+apt_mirror_county: ca
+shell_font_size: 52
+
+#include: vault_passwords.yml

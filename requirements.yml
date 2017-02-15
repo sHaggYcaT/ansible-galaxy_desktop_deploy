@@ -1,0 +1,10 @@
+#from our repo
+# - src: git+http://ioummu_desktop_bot:***@10.0.5.122/vtd_linux/elementaryos.git
+ - src:  git+https://github.com/sHaggYcaT/elementary-os-deploy.git
+   name: elementaryos
+
+#from galaxy
+
+#core timezone module in the Ansible is broken. Use this role instead
+ - src: kbrebanov.timezone
+   version: v2.1.0
