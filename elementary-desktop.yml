@@ -10,6 +10,7 @@
      #We run this role at first, because role check distribution. After install our role, it must change distribution
      - { role: kbrebanov.timezone, when: ansible_distribution_release == 'xenial' }
      - elementaryos
+     - { role: misc_settings, misc_user: 'vasily', misc_user_hash: 'FIXME' }
 
    vars_files:
      - defaults/main.yml

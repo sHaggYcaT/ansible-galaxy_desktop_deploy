@@ -1,0 +1,15 @@
+#from project repo in the github
+ - src: git+https://github.com/sHaggYcaT/elementary_os_deploy.git
+   name: elementaryos
+
+ - src: git+https://github.com/sHaggYcaT/pci_passthrough_deploy.git
+   name: pci_passthrough
+
+#Install misc role from your own private git repo   
+ - src: git+http://ioummu_desktop_bot:***@10.0.5.122/vtd_linux/misc_settings.git
+   name: misc_settings
+  
+#from official ansible galaxy
+#core timezone module in the Ansible is broken. Use this role instead
+ - src: kbrebanov.timezone
+   version: v2.1.0
