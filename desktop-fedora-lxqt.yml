@@ -1,0 +1,16 @@
+---
+ - hosts: desktop
+   become: true
+
+   vars:
+     timezone_name: Europe/Moscow
+
+   roles:
+     #timezone core module actually broken. Just use role from galaxy instead.
+     #We run this role at first, because role check distribution. After install our role, it must change distribution
+     #- { role: kbrebanov.timezone, when: ansible_distribution_release == 'xenial' }
+     - Fedora_LXQt
+
+   vars_files:
+     - defaults/main.yml
+

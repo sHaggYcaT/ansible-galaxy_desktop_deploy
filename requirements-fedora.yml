@@ -1,0 +1,21 @@
+#from our repo
+ - src: git+https://github.com/sHaggYcaT/fedora_lxqt_deploy.git
+   name: Fedora_LXQt
+
+ - src: git+https://github.com/sHaggYcaT/fedora_kde_deploy.git
+   name: Fedora_KDE
+
+
+
+ - src: git+https://github.com/sHaggYcaT/pci_passthrough_deploy.git
+   name: pci_passthrough
+
+#Install misc role from your own private git repo   
+ - src: git+http://ioummu_desktop_bot:***@10.0.5.122/vtd_linux/misc_settings.git
+   name: misc_settings
+
+#from galaxy
+
+#core timezone module in the Ansible is broken. Use this role instead
+ #- src: kbrebanov.timezone
+ #  version: v2.1.0

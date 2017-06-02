@@ -1,0 +1,12 @@
+---
+ - hosts: desktop
+   become: true
+
+   vars:
+     timezone_name: Europe/Moscow
+
+   roles:
+     - { role: pci_passthrough, revert_video_card: true }
+
+   vars_files:
+     - defaults/main.yml
